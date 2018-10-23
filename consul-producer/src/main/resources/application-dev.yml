@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: consul-producer
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        service-name: service-producer-demo
+#        tags: dev
+#        health-check-path: /health
+#        health-check-interval: 15s
+#        instance-id: app
+server:
+  port: 8901
+
+
+# 启动命令
+# windows consul agent -dev
+#
+
+#config/spring-cloud-consul-producer,dev/data
+#myName: jack
+#student:
+#  name: jack
+#  age: 18
+#  sex: 男
