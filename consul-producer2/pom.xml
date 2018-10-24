@@ -11,5 +11,21 @@
 
     <artifactId>consul-producer2</artifactId>
 
+    <properties>
+        <spring-cloud-starter-consul.version>2.0.1.RELEASE</spring-cloud-starter-consul.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <version>${spring-cloud-starter-consul.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-config</artifactId>
+            <version>${spring-cloud-starter-consul.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
